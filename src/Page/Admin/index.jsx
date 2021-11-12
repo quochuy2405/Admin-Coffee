@@ -69,7 +69,7 @@ function Admin(props) {
     <div className='Admin'>
       <div className='header'>
         <div className='background-top'>
-          <i className='logo_text'>COFFEE&BOOK</i>
+          <i className='logo_text'> COFFEE&BOOK</i>
         </div>
         <div className='nav-top'>
           <div className='logo' style={{ transform: 'scale(0.455)' }}>
