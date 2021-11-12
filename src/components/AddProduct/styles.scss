@@ -1,0 +1,80 @@
+.AddProduct {
+    width: 60%;
+    height: fit-content;
+    margin:3% 20%;
+    box-shadow:  0px 5px 10px rgb(150, 149, 149);
+    padding: 20px;
+    position: absolute;
+    display: grid;
+    grid-template-areas:
+        "h1 h2"
+        "h3 h4"
+        "h5 h5";
+    gap: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    & .title{
+        grid-area: h1;
+    }
+    & .price{
+        grid-area: h2;
+    }
+    & .content.description{
+        grid-area: h3;
+        & textarea{
+            height: 200px;
+            border-radius: 20px;
+        }
+    }
+    & .content{
+   
+        & input,textarea{
+      
+                border: 2px solid rgb(92, 168, 212);
+                outline:rgb(92, 168, 212) ;
+                border-radius: 10px;
+                padding: 10px 10px;
+                display: flex;
+               width: 100%;
+        }
+    }
+    & #inputFile {
+        display: none;
+    }
+    & .btn_submit{
+     grid-area: h5;
+     width: 40%;
+     margin: 0 auto;
+     font-weight: 700;  
+     color: rgb(92, 92, 92);
+    }
+    & .box_input {
+      
+        width: 100%;
+        height: 200px;
+        border: 2px solid rgb(92, 168, 212);
+        border-radius: 20px;
+        position: relative;
+        color: rgb(80, 191, 255);
+
+        & .img_preview {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            object-position: center;
+        }
+        & .iconUpLoad {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            opacity: 0.7;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
