@@ -9,7 +9,15 @@
     height: 100%;
     border-radius: 0;
   }
+  .Revenue {
+    display: block;
+    padding: 0 40px;
 
+    }
+    .Revenue div {
+      margin: 35px 0;
+      height: 64%
+    }
   .App .Login .loginFrom .img_group img {
     border-radius: 0;
   }
@@ -44,6 +52,15 @@
   .App .Admin_main .body_render .itemTable{
     width: 800px;
  }
+ .Revenue {
+display: block;
+padding: 0 80px;
+}
+.Revenue div {
+  margin: 35px 0;
+  height: 64%;
+}
+
   .App .Admin .Admin_main .main_menu{
     min-width: 300px;
     position: absolute;
