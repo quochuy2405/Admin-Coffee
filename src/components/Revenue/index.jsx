@@ -1,8 +1,17 @@
 import React, { useEffect } from 'react';
 import './styles.scss';
-import {Bar,Pie,Bubble } from 'react-chartjs-2';
+import {Bar,Pie,Bubble,Line } from 'react-chartjs-2';
 function Revenue(props) {
-
+  const dataDay = {
+    labels:[2,4,6,8,10,12,14,16,18,20,22,24],
+    datasets: [{
+      label: 'Doanh thu (triệu)',
+      data: [65, 59, 80, 81, 56, 55, 40],
+      fill: false,
+      borderColor: 'rgb(75, 192, 192)',
+      tension: 0.1
+    }]
+  };
   const dataMonth = {
     labels: [
       'Coffee',
@@ -67,7 +76,11 @@ function Revenue(props) {
     <div className='Revenue'>
       <div className='Revenue__Day'>
         <h5 className="Title_Revenue color_day">Doanh Thu Hôm Nay</h5>
-        
+        <Line 
+          data={dataDay}
+          width={100}
+          height={200}
+          options={{ maintainAspectRatio: false }}/>
       </div>
       <div className='Revenue__Week'>
       <h5 className="Title_Revenue color_week">Doanh Thu Tuần</h5>
