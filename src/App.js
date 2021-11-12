@@ -7,7 +7,6 @@ import './App.css';
 import Admin from './Page/Admin/index';
 import Login from './Page/Login';
 import NotFound from './Page/NotFound/index';
-import SignIn from './Page/SignIn/index';
 import './responsive.css';
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
     <div className='App'>
       <Switch>
         <Route path='/' component={Login} exact />
-        <Route path='/signin' component={SignIn} exact />
         <Route path='/auth/admin' component={Admin} exact />
         <Route path='/:slug' component={NotFound} />
       </Switch>
