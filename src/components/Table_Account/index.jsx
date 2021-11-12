@@ -1,6 +1,7 @@
 import '../stylesTable.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 Table_Account.propTypes = {
   List: PropTypes.array,
@@ -66,31 +67,31 @@ export default function Table_Account(props) {
     <nav aria-label='Page navigation' className="Page navigation">
         <ul className='pagination'>
           <li className='page-item'>
-            <a className='page-link' href='#' aria-label='Previous'>
+            <Link className='page-link' to="/" aria-label='Previous'>
               <span aria-hidden='true'>&laquo;</span>
               <span className='sr-only'>Previous</span>
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a className='page-link' href='#'>
+            <Link className='page-link' to="/">
               1
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a className='page-link' href='#'>
+            <Link className='page-link' to="/">
               2
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a className='page-link' href='#'>
+            <Link className='page-link' to="/">
               3
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a className='page-link' href='#' aria-label='Next'>
+            <Link className='page-link' to="/" aria-label='Next'>
               <span aria-hidden='true'>&raquo;</span>
               <span className='sr-only'>Next</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
