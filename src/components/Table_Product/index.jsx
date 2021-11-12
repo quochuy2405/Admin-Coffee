@@ -26,6 +26,7 @@ export default function Table_Product(props) {
     setDetails(params);
   }
   return (
+    <>
     <div className='body_page'>
       <table className='itemTable'>
         <thead className='headerTable'>
@@ -81,7 +82,10 @@ export default function Table_Product(props) {
           ))}
         </tbody>
       </table>
-      <nav aria-label='Page navigation example'>
+
+      <ProDetails open={open} setOpen={setOpen} Item={details} />
+    </div>
+    <nav aria-label='Page navigation' className="Page navigation">
         <ul className='pagination'>
           <li className='page-item'>
             <a className='page-link' href='#' aria-label='Previous'>
@@ -112,7 +116,6 @@ export default function Table_Product(props) {
           </li>
         </ul>
       </nav>
-      <ProDetails open={open} setOpen={setOpen} Item={details} />
-    </div>
+    </>
   );
 }
