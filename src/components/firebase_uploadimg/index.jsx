@@ -1,6 +1,7 @@
 
-// import firebase from 'firebase/app';
+
 // import 'firebase/storage';
+// import  firebase  from 'firebase/app';
 //   const firebaseConfig_uploadImg= {
 //     apiKey: 'AIzaSyCIhTdWK_MLBADGH5G8Rp3buQBPeDq0PW8',
 //     authDomain: 'upload-image-9b971.firebaseapp.com',

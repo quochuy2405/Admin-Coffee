@@ -7,10 +7,12 @@ import App from './App';
 import AuthContextProvider from './app/AuthContext';
 import Login from './app/Login';
 import store from './app/Store';
+import { StyledEngineProvider } from '@mui/material/styles';
 import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
+    <StyledEngineProvider injectFirst>
     <AuthContextProvider>
     <Login>
     <BrowserRouter>
@@ -22,6 +24,7 @@ ReactDOM.render(
     </BrowserRouter>
     </Login>
     </AuthContextProvider>
+    </StyledEngineProvider>,
   </React.StrictMode>,
   document.getElementById('root')
 );

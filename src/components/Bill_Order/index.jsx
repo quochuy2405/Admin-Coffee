@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import Table_Bill from '../Table_Bill';
 import data from '../../data';

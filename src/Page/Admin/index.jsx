@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-pascal-case */
 import 'bootstrap';
-import React, { useEffect, useLayoutEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Analytis from '../../components/Bill_Order';
 import Account from '../../components/Account/index';
 import Customers from '../../components/Customers/index';
@@ -12,8 +13,9 @@ import Revenue from './../../components/Revenue/index';
 function Admin(props) {
   const [Fitter_admin, setFiller_admin] = useState('0');
   const [body_admin, setbody_admin] = useState(undefined);
-  const ListTag = document.querySelectorAll('.tag_menu');
+
   useEffect(() => {
+    const ListTag = document.querySelectorAll('.tag_menu');
     ListTag.forEach((item) => {
       item.addEventListener('click', () => {
         document.getElementById('nav_X_admin').click();
@@ -21,9 +23,10 @@ function Admin(props) {
         setFiller_admin(valueData);
       });
     });
-  });
+  },[]);
 
   useEffect(() => {
+    const ListTag = document.querySelectorAll('.tag_menu');
     ListTag.forEach((item) => {
       const valueData = item.getAttribute('data-set');
       if (Fitter_admin === valueData) {
@@ -160,12 +163,12 @@ function Admin(props) {
               className='Title_Section'
               data-toggle='collapse'
               data-target='#dashboard'
-              aria-expanded='false'
+              aria-expanded='true'
               aria-controls='dashboard'>
               <i className='icon fad fa-rocket'></i>DashBoard
               <i className='fas fa-chevron-right'></i>
             </div>
-            <ul className='collapse' id='dashboard'>
+            <ul className='collapse show' id='dashboard'>
               <li className='tag_menu active' data-set='0'>
                 Đơn hàng
               </li>
@@ -219,7 +222,6 @@ function Admin(props) {
             </ul>
           </div>
         </div>
-
         <div className='body_render'>{body_admin}</div>
       </div>
     </div>

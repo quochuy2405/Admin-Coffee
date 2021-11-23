@@ -68,7 +68,7 @@ const data = {
     {
       id: 'KH_04',
       link_img:
-        'https://minio.thecoffeehouse.com/image/admin/cpsd-3in1_971575_400x400.jpg',
+        'https://minio.thecoffeehouse.com/image/admin/Coupondelivery30_684527.jpg',
       title: 'Cà phê nguyên chất 4',
       desc: 'Được rang dưới nhiệt độ vàng, Cà phê Peak Flavor - Hương thơm đỉnh cao lưu giữ trọn vẹn hương thơm tinh tế đặc trưng của cà phê Robusta Đăk Nông và Arabica Cầu Đất. Với sự hòa trộn nhiều cung bậc giữa hương và vị sẽ mang đến cho bạn một ngày mới tràn đầy cảm hứng.',
       price: '9.323',

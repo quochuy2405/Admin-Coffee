@@ -1,22 +1,20 @@
-import React from 'react';
+import * as React from 'react';
+import Table_Person from './../Table_Person/index';
 import data from '../../data';
-import Table_Account from '../Table_Account';
-
-function Sales(props) {
-    const List_Title_Head=[
+ function Sales() {
+  const List_Title_Head=[
         
-        {Name:"Mã số"},
-        {Name:"Họ tên"},
-        {Name:"Gmail"},
-        {Name:"Số điện thoại"},
-        {Name:"Xóa"},
-        {Name:"Cập nhật"},   
+    {Name:"Mã số"},
+    {Name:"Họ tên"},
+    {Name:"Email"},
+    {Name:"Số điện thoại"},
+    {Name:"Xóa"},
+    {Name:"Cập nhật"},   
 ]
 
-        return (    
-                <Table_Account List={data.Employees_data} List_Title_Head={List_Title_Head}/>
-        );
+  return (
+    // eslint-disable-next-line react/jsx-pascal-case
+    <Table_Person List_Title_Head={List_Title_Head} List={data.Employees_data} />
+  );
 }
-
-
-export default Sales;
+export default Sales
